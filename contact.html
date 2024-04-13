@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompSci</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="contactus.css">
+    <!--Box Icons-->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">
+            <img src="" alt="">
+        </a>
+        <!-- Menu Icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- Links to sections -->
+        <ul class="navbar"> <!-- corrected class name -->
+            <li><a href="frontend.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Icon -->
+        <div class="header-icon"> <!-- corrected class name -->
+            <i class='bx bxs-user-account' ></i>
+            <i class='bx bx-search'></i>
+        </div>
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
+</header>
+    
+    <!-- Contact Form -->
+    <div class="container contact-container">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- Link to JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>

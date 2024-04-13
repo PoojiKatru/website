@@ -1,0 +1,163 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+/* Variables */
+:root {
+    --main-color: rgb(4, 34, 55);
+    --second-color: rgb(182, 237, 245);
+    --text-color: #8297b7;
+    --bg-color: #fff;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background: var(--text-color);
+}
+
+.logo img {
+    width: 80px;
+
+
+}
+
+.navbar {
+    display: flex;
+    list-style: none; /* Added list-style */
+}
+
+.navbar a {
+    padding: 8px 17px;
+    color: var(--main-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background: var(--second-color);
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+}
+
+.header-icon {
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    column-gap: 0.8rem;
+
+}
+
+.header-icon .bx {
+    color: var(--text-color);
+}
+
+.header-icon .bx:hover {
+    color: var(--main-color);
+}
+
+#search-icon {
+    color: var(--main-color);
+    font-size: 24px;
+    z-index: 100001;
+    cursor: pointer;
+}
+
+.search-box {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--bg-color);
+    width: 100%;
+}
+
+.search-box input {
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+.search-box.active {
+    top: 110%;
+    box-shadow: var(--box-shadow);
+    transition: 0.2s all linear;
+}
+
+.search-box input::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust the height as needed */
+}
+
+.contact-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+}
+
+.contact-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-box form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.contact-box label {
+    font-weight: bold;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-box button:hover {
+    background-color: #0056b3;
+}
